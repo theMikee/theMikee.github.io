@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proiect Informatica</title>
         <link rel="stylesheet" href="../css/pages.css">
+        <script src="../script/code.js"></script>
     </head>
 
-    <body>
+    <body onload="loaded()">
         <header>
             <a href="../index.html" class="home-link">
                 <div class="home-logo">Home</div>
@@ -27,7 +28,42 @@
 
         <main>
             <section>
-                
+                <h2>Lorem ipsum title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum. This content is added to make the page 
+                    scrollable and demonstrate the fixed header and navigation functionality.</p>
+
+                <div class="code-area">
+                    <pre>
+                        <code class="coder">
+#include &lt;iostream&gt;
+
+// This is a single-line comment.
+int main() {
+    const int x = 10; // A number
+    float pi = 3.14159;
+    char myChar = 'A';
+    std::string message = "Hello, World!"; // A string
+    
+    if (x > 5) {
+        cout &lt;&lt; message &lt;&lt; endl;
+    } else {
+        cout &lt;&lt; "x is not greater than 5" &lt;&lt; endl;
+    }
+
+    for (int i = 0; i < 5; ++i) {
+        // Loop
+    }
+    
+    return 0;
+}
+                        </code>
+                    </pre>
+                </div>
+
             </section>
         </main>
 

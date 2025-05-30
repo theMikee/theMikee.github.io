@@ -64,3 +64,74 @@ header
     background-color: #e74c3c; /* Accent color on hover/focus */
     color: white;
 }
+
+main {
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto; 
+}
+
+main section
+{
+    padding: 30px 20px;
+    margin-bottom: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 50vh;
+}
+
+main section:last-child {
+    margin-bottom: 0;
+}
+
+main section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+main section p {
+    margin-bottom: 2.5px;
+    color: #555;
+}
+
+.code-area
+{
+    background-color: #333;
+}
+
+.code-area pre
+{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: white;
+    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', monospace;
+}
+
+.cpp-comment 
+{ 
+    color: #75715e; 
+    font-style: italic; 
+}
+.cpp-preprocessor 
+{ 
+    color: #f92672;
+}             
+.cpp-string 
+{ 
+    color: #e6db74; 
+}
+.cpp-number 
+{ 
+    color: #ae81ff; 
+}                  
+.cpp-keyword 
+{ 
+    color: #66d9ef;
+    font-weight: bold;
+}
+.cpp-type 
+{ 
+    color: #a6e22e;
+}
