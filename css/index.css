@@ -1,4 +1,9 @@
-.title
-{
+.title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
+    font-size: 32px;
 }
