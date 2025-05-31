@@ -5,9 +5,55 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proiect Informatica</title>
+        <link rel="stylesheet" href="../css/pages.css">
+        <script type="module" src="../script/navigator.js"></script>
+        <script type="module" src="../script/probleme.js"></script>
+        <script type="module" src="../script/codeHighlighter.js"></script>
     </head>
 
-    <body>
+    <body id="divide">
+        <header>
+            <a href="../index.html" class="home-link">
+                <div class="home-logo">Home</div>
+            </a>
+
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="./functii.html" class="nav-link">Functii</a></li>
+                    <li><a href="./siruri.html" class="nav-link">Siruri</a></li>
+                    <li><a href="./structuri.html" class="nav-link">Structuri</a></li>
+                    <li><a href="./recursivitate.html" class="nav-link">Recursivitate</a></li>
+                    <li><a href="./divide.html" class="nav-link">Divide et Impera</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Lorem ipsum title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                        deserunt mollit anim id est laborum. This content is added to make the page 
+                        scrollable and demonstrate the fixed header and navigation functionality.
+                    </p>
+                    
+                <div class="code-area">
+                    <pre id="coder">
+                        
+                    </pre>
+                </div>
+            </section>
+
+            <div class="naver">
+                <ul>
+                    <li><button id="back" class="nav-bttn-back">&lt;</button></li>
+                    <li><pre id="nav-ind" class="nav-indicator">5445</pre></li>
+                    <li><button id="fwd" class="nav-bttn-fwd">&gt;</button></li>
+                </ul>
+            </div> 
+        </main>
 
     </body>
 </html>

@@ -69,7 +69,6 @@ function highlightSyntax(code) {
         currentIndex = match.end;
     });
 
-
     finalHtml += highlightedCode.substring(currentIndex);
 
     return finalHtml;
