@@ -16,7 +16,7 @@ back.addEventListener("click", function()
         back.disabled = true;
     }
     txtLabel.innerText = `${current + 1}/${probleme.length}`;
-    rawCode = probleme[curent];
+    rawCode = probleme[curent].text;
 
     highlightSyntax(rawCode);
 });
@@ -34,5 +34,8 @@ fwd.addEventListener("click", function()
     highlightSyntax(rawCode);
 });
 
-highlightSyntax(rawCode);
-alert("sad");
+function loaded()
+{
+    highlightSyntax(rawCode);
+    alert("sad");
+}

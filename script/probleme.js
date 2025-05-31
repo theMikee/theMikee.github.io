@@ -1,5 +1,5 @@
 const probleme = [
-    `#include <iostream>
+    {nr: 6996, name:"420", text:`#include <iostream>
 // This is a single-line comment.
 int main() {
     const int x = 10; // A number
@@ -18,7 +18,7 @@ int main() {
     }
     
     return 0;
-}`,
+}`},
 ]
 
 export { probleme };
