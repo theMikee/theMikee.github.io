@@ -34,8 +34,8 @@ let rawCode = probleme[0].text;
 //     highlightSyntax(rawCode);
 // });
 
-function loaded()
+window.onload = function()
 {
     highlightSyntax(rawCode);
     alert("sad");
-}
+};
