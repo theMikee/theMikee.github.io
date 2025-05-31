@@ -3,9 +3,12 @@ import { highlightSyntax } from "./codeHighlighter.js";
 
 const codeArea = document.getElementById("coder");
 
-let back = document.getElementById("back");
-let fwd = document.getElementById("fwd");
-let txtLabel = document.getElementById("nav-ind");
+const back = document.getElementById("back");
+const fwd = document.getElementById("fwd");
+const txtLabel = document.getElementById("nav-ind");
+const numLabel = document.getElementById("numLabel");
+const cerLabel = document.getElementById("cerLabel");
+const probLabel = document.getElementById("probName");
 
 let curent = 0;
 let rawCode = "";
@@ -19,7 +22,10 @@ back.addEventListener("click", function()
         back.disabled = true;
     }
     txtLabel.innerText = `${curent + 1}/${probleme.length}`;
-    rawCode = probleme[curent].text;
+    rawCode = probleme[curent].code;
+    cerLabel.innerText = probleme[curent].text;
+    numLabel.innerText = `#${probleme[curent].nr}`;
+    probLabel.innerText = probleme[curent].name;
     fwd.disabled = false;
     console.log("current= " + curent);
 
@@ -34,7 +40,10 @@ fwd.addEventListener("click", function()
         fwd.disabled = true;
     }
     txtLabel.innerText = `${curent + 1}/${probleme.length}`;
-    rawCode = probleme[curent].text;
+    rawCode = probleme[curent].code;
+    cerLabel.innerText = probleme[curent].text;
+    numLabel.innerText = `#${probleme[curent].nr}`;
+    probLabel.innerText = probleme[curent].name;
     back.disabled = false;
     console.log("current= " + curent);
 
@@ -64,7 +73,17 @@ window.onload = function()
         
     }
     
-    rawCode = probleme[0].text;
+
+    if(probleme.length == 1)
+    {
+        fwd.disabled = true;
+    }
+    back.disabled = true;
+
+    rawCode = probleme[0].code;
     codeArea.innerHTML = highlightSyntax(rawCode);
     txtLabel.innerText = `${curent + 1}/${probleme.length}`;
+    numLabel.innerText = `#${probleme[0].nr}`;
+    cerLabel.innerText = probleme[0].text;
+    probLabel.innerText = probleme[0].name;
 };
