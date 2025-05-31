@@ -36,6 +36,6 @@ let rawCode = probleme[0].text;
 
 window.onload = function()
 {
-    highlightSyntax(rawCode);
+    document.getElementById("coder").innerHTML = highlightSyntax(rawCode);
     alert("sad");
 };
