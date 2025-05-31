@@ -15,7 +15,7 @@ function highlightSyntax(code) {
         { pattern: /\b(\d+(\.\d*)?([eE][+-]?\d+)?|\.\d+([eE][+-]?\d+)?)\b/g, className: 'cpp-number' },
 
         // 5. C++ Keywords (a more comprehensive list)
-        { pattern: /\b(alignas|alignof|and|and_eq|asm|auto|bitand|bitor|bool|break|case|catch|char|char16_t|char32_t|class|compl|const|const_cast|constexpr|continue|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|false|float|for|friend|goto|if|inline|int|long|mutable|namespace|new|noexcept|not|not_eq|nullptr|operator|or|or_eq|private|protected|public|register|reinterpret_cast|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|true|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while|xor|xor_eq)\b/g, className: 'cpp-keyword' },
+        { pattern: /\b(int|float|double|char|if|else|while|for|const|return)\b/g, className: 'cpp-keyword' },
 
         // 6. Common types and standard library elements (e.g., std::string, cout, vector)
         // Includes common standard library types and objects.
@@ -75,21 +75,4 @@ function highlightSyntax(code) {
     return finalHtml;
 }
 
-/**
- * @function loaded
- * @description This function is called when the HTML document is fully loaded.
- * It retrieves the code from the 'coder' pre tag and applies syntax highlighting.
- */
-function loaded() {
-// console.log("loaded function called"); // Debugging log
-const codeElement = document.getElementById("coder");
-
-if (codeElement) {
-    // Get the raw text content from the <pre> tag
-    const rawCode = codeElement.innerText;
-    // Apply syntax highlighting and set the innerHTML
-    codeElement.innerHTML = highlightSyntax(rawCode);
-} else {
-    console.error("Element with ID 'coder' not found. Syntax highlighting cannot be applied.");
-}
-}
+export { highlightSyntax };
