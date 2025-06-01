@@ -9,6 +9,7 @@ const txtLabel = document.getElementById("nav-ind");
 const numLabel = document.getElementById("numLabel");
 const cerLabel = document.getElementById("cerLabel");
 const probLabel = document.getElementById("probName");
+const exmLabel = document.getElementById("exmLabel");
 
 let curent = 0;
 let rawCode = "";
@@ -26,6 +27,7 @@ back.addEventListener("click", function()
     cerLabel.innerText = probleme[curent].text;
     numLabel.innerText = `#${probleme[curent].nr}`;
     probLabel.innerText = probleme[curent].name;
+    exmLabel.innerText = probleme[curent].example;
     fwd.disabled = false;
     console.log("current= " + curent);
 
@@ -44,6 +46,7 @@ fwd.addEventListener("click", function()
     cerLabel.innerText = probleme[curent].text;
     numLabel.innerText = `#${probleme[curent].nr}`;
     probLabel.innerText = probleme[curent].name;
+    exmLabel.innerText = probleme[curent].example;
     back.disabled = false;
     console.log("current= " + curent);
 
@@ -86,4 +89,5 @@ window.onload = function()
     numLabel.innerText = `#${probleme[0].nr}`;
     cerLabel.innerText = probleme[0].text;
     probLabel.innerText = probleme[0].name;
+    exmLabel.innerText = probleme[0].example;
 };

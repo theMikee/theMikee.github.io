@@ -1,8 +1,8 @@
 const functii = [
 {
     nr: 74, name:"FUrmatorulPrim",
-    text: `Cerința
-            Scrieți definiția completă a unui subprogram C++ nr_prim care primește prin singurul său parametru, n, un număr natural cu cel mult 9 cifre și returnează cel mai mic număr prim, strict mai mare decât n.`,
+    text: `Scrieți definiția completă a unui subprogram C++ nr_prim care primește prin singurul său parametru, n, un număr natural cu cel mult 9 cifre și returnează cel mai mic număr prim, strict mai mare decât n.`,
+    example: ``,
     code:`int nr_prim(int n)
 {
     ++n;                // incepem de la n+1
@@ -23,8 +23,8 @@ const functii = [
 
 {
     nr: 1745 , name:"minDivPrim",
-    text: `Cerinţa
-            Subprogramul minDivPrim are un singur parametru, n, prin care primeşte un număr natural. Subprogramul returnează cel mai mic număr natural care are aceiași divizori primi ca n. Scrieţi definiţia completă a subprogramului.`,
+    text: `Subprogramul minDivPrim are un singur parametru, n, prin care primeşte un număr natural. Subprogramul returnează cel mai mic număr natural care are aceiași divizori primi ca n. Scrieţi definiţia completă a subprogramului.`,
+    example: ``,
     code:`int minDivPrim(int n)
 {
     for (int i = 2; i * i <= n; ++i)
@@ -40,8 +40,27 @@ const functii = [
 }`},
 
 {  
-    nr:404, name: "nu",
-    text: `qwerty3`,code:`###3`
+    nr:2823 , name: "CifreImpare",
+    text: `Subprogramul cifreImpare are un singur parametru, n, prin care primește un număr natural cu toate cifrele nenule (n∈[1,109]). Subprogramul returnează numărul obținut prin eliminarea tuturor cifrelor impare din n, respectiv -1 dacă nu există astfel de cifre sau dacă toate cifrele lui n sunt impare.`,
+    example: ``,
+    code:`int cifreImpare(int n)
+{
+    int copie = 0, p = 1, ok = 0;
+    while (n)
+    {
+        if (!(n % 2))
+        {
+            copie += n % 10 * p;
+            p *= 10;
+        }
+        else
+            ok = 1;
+        n /= 10;
+    }
+    if (!copie || !ok)
+        return -1;
+    return copie;
+}`
 },
 
 {  

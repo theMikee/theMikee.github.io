@@ -112,6 +112,7 @@ main section ul li
 {
     background-color: #333;
     margin-top: 15px;
+    border-radius: 10px;
 }
 .code-area pre
 {
@@ -119,6 +120,7 @@ main section ul li
     word-wrap: break-word;
     color: white;
     font-family: 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', monospace;
+    margin-left: 8px;
 }
 
 .naver
