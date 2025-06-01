@@ -173,6 +173,80 @@ main section ul li
     font-size: 16.5px;
 }
 
+.variante
+{
+    display: flex; /* Arrange input groups in a row */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center input groups if they wrap or don't fill space */
+    gap: 10%; /* Space between input groups */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 5px 4px 6px rgba(0,0,0,0.1); /* Slightly adjusted shadow */
+    max-width: 100%;
+}
+
+.varGroup
+{
+    display: flex;
+    flex-direction: column; /* Stack label on top of input */
+    min-width: 150px;
+}
+
+.varGroup label
+{
+    margin-bottom: 6px; /* Space between label and input */
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500; /* Medium weight */
+    color: #374151;
+}
+
+.varianta
+{
+    padding: 10px 12px; /* Increased padding for better touch targets */
+    font-size: 0.875rem; /* 14px */
+    color: #1f2937; /* Input text color */
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); /* Subtle inner shadow */
+    width: 100%; /* Make input take full width of its .input-group parent */
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.exmContainer
+{
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Vertically align items in the center */
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f4f8; /* Light background for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    min-height: 100px;
+}
+
+.exmLabel
+{
+    padding: 10px;
+    border: 1px solid #cbd5e1; /* Tailwind's gray-300 */
+    border-radius: 6px; /* Rounded corners for paragraph boxes */
+    font-size: 16px;
+    width: 500px; /* Fixed width for paragraph boxes */
+    min-height: 50px; /* Minimum height to ensure it looks like a box even with less content */
+    background-color: #ffffff; /* White background for the paragraph box */
+    color: #374151; /* Tailwind's gray-700 for text color */
+    line-height: 1.5; /* Adjust line height for readability */
+    overflow-wrap: break-word;
+}
+
+.arrow 
+{
+    font-size: 50px; /* Size of the arrow */
+    color: #4b5563; /* Tailwind's gray-600 */
+    margin-left: 15px; /* Space before the arrow */
+    margin-right: 15px; /* Space after the arrow */
+    line-height: 1; /* Ensure arrow aligns well vertically */
+}
+
 .cpp-comment 
 { 
     color: #75715e; 
