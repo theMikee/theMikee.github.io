@@ -61,7 +61,7 @@ header
 .nav-link:hover,
 .nav-link:focus
 {
-    background-color: #e74c3c; /* Accent color on hover/focus */
+    background-color: #357abd; /* Accent color on hover/focus */
     color: white;
 }
 
