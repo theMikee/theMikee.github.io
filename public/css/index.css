@@ -69,3 +69,19 @@ body {
     background-color: #357abd; /* Darker blue on hover */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
+
+footer
+{
+    background-color: rgb(148, 178, 207);
+    color: white;
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+}
