@@ -7,9 +7,9 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    background-color: #a2e6f7; /* Light grey background for the page */
+    background-color: #a2e6f7;
     color: #333;
-    padding-top: 60px; /* Space for fixed header */
+    padding-top: 60px;
 }
 
 .title {
@@ -35,7 +35,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex; /* Arrange buttons in a row */
+    display: flex;
     gap: 20px; 
 }
 
@@ -43,9 +43,9 @@ body {
 {
     width: 200px;
     height: 100px;
-    border-radius: 15px; /* Makes the button round */
-    background-color: #2c3e50; /* Blue background color */
-    color: white; /* White text color */
+    border-radius: 15px;
+    background-color: #2c3e50;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,9 +53,9 @@ body {
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; /* Smooth transition for pop and shadow */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border: none; /* Remove default button border */
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 .naver a
@@ -65,8 +65,8 @@ body {
 
 .naver button:hover
 {
-    transform: scale(1.15); /* Pop out effect - scales the button to 115% */
-    background-color: #357abd; /* Darker blue on hover */
+    transform: scale(1.15);
+    background-color: #357abd;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
