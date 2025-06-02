@@ -63,9 +63,13 @@ back.addEventListener("click", function()
     if(curent == 0)
     {
         back.disabled = true;
+        back.style.backgroundColor ="#5d6f81"
+        back.style.cursor = 'not-allowed';
     }
         
     fwd.disabled = false;
+    fwd.style.backgroundColor = "#2c3e50";
+    fwd.style.cursor = 'pointer';
     changeElem();
     selectRight();
 
@@ -78,8 +82,12 @@ fwd.addEventListener("click", function()
     if(curent == probleme.length - 1)
     {
         fwd.disabled = true;
+        fwd.style.backgroundColor ="#5d6f81"
+        fwd.style.cursor = 'not-allowed';
     }
     back.disabled = false;
+    back.style.backgroundColor = "#2c3e50";
+    fwd.style.cursor = 'pointer';
     changeElem();
     selectRight();
 
@@ -113,6 +121,10 @@ window.onload = function()
     var2.innerText = probleme[0].var2;
     var3.innerText = probleme[0].var3;
     var4.innerText = probleme[0].var4;
+
+    back.disabled = true;
+    back.style.backgroundColor ="#5d6f81"
+    back.style.cursor = 'not-allowed';
 
     selectRight();
 };
