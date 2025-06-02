@@ -272,6 +272,23 @@ footer
     z-index: 1001;
 }
 
+.specialFooter
+{
+    background-color: rgb(148, 178, 207);
+    color: white;
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 20px;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
 .cpp-comment 
 { 
     color: #75715e; 

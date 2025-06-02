@@ -18,7 +18,6 @@ function highlightSyntax(code) {
         { pattern: /\b(int|float|double|char|if|else|while|for|const|return|break|bool|void|struct)\b/g, className: 'cpp-keyword' },
 
         // 6. Common types and standard library elements (e.g., std::string, cout, vector)
-        // Includes common standard library types and objects.
         { pattern: /\b(std::\w+|cout|cin|endl|ifstream|ofstream)\b/g, className: 'cpp-type' },
     ];
 

@@ -87,7 +87,7 @@ fwd.addEventListener("click", function()
     }
     back.disabled = false;
     back.style.backgroundColor = "#2c3e50";
-    fwd.style.cursor = 'pointer';
+    back.style.cursor = 'pointer';
     changeElem();
     selectRight();
 
